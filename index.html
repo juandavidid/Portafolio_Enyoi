@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!--Importar Iconos-->
+    <!--1.Icono del Menu-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+     <!--Ruta de los estilos-->
+    <link rel="stylesheet" href="./assets/src/css/styles.css">
+
+
+     <!--Imagen Icon-->
+    <link rel="icon" href="./assets/src/img/icons8-favicon-16.png" type="image/x-icon">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-hearder">
+         
+        <!--Contenedor header-->
+        <header>
+
+            <!--Logo-->
+            <div class="logo">
+                <a href="#">J</a>
+            </div>
+
+            <h2>Juan</h2>
+            <h3>Web Developer</h3>
+           
+            <!--Estructura del Menu-->
+            <nav id="nav" class="nav">
+                <ul>
+                    <li><a href="#inicio"  >INICIO</a></li>
+                    <li><a href="#sobremi">SOBRE</a></li>
+                    <li><a href="#skills" >SKILLS</a></li>
+                    <li><a href="#curriculum">CURRICULUM</a></li>
+                    <li><a href="#portfolio" >CURSOS</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
+                </ul>
+            </nav>
+
+            <!--Iconos de las redes sociales-->
+            <div class="redes">
+                <a href="https://www.facebook.com/juandavidc2" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/JUANDA9416" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/juandavidcg/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+
+
+
+
+            <!--Estructura Responsive
+            
+            <div class="nav-responsive">
+                //Icono del Menu
+                <i class="fa-solid fa-bars  menu"></i>
+            </div>
+               -->
+
+        </header>
+
+    </div>
+
+    <!--MENU RESPONSIVE-->
+    <div class="menuresponsive">
+        <header class="header-cabecera">
+            <!--Estructura Responsive MENU-->
+            <div class="nav-menuicono">
+              <!--Icono del Menu-->
+              <i class="fa-solid fa-bars  menu"></i>
+            </div>
+
+            <nav id="items">
+              <ul class="ul-items">
+                <li><a href="#inicio"  onclick="seleccionar()">INICIO</a></li>
+                <li><a href="#sobremi" onclick="seleccionar()">SOBRE</a></li>
+                <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                <li><a href="#portfolio" onclick="seleccionar()">CURSOS</a></li>
+                <li><a href="#contacto"onclick="seleccionar()">CONTACTO</a></li>
+              </ul>
+            </nav>
+
+        </header>
+    </div>
+
+    <!--SECCION DE INICIO-->
+    <section id="inicio" class="inicio">
+        
+        <div class="contenedor">
+         <!--Texto-->
+         <div class="textoinicial">
+            <p>Hi,<br>I'm John,<br>Web Developer</p>
+          </div>
+        
+
+          <!--Card del perfil-->
+          <div class="contenido-banner">
+            <!--Contenedor Imagen perfil-->
+            <div class="contenedor-img">
+                <img src="./assets/src/img/Avatar.png" alt="">
+            </div>
+
+            <h1>Juan David</h1>
+
+            <h2>Ingeniero de Electronico -software developer</h2>
+
+            <!--Iconos de las redes sociales-->
+            <div class="redes">
+                <a href="https://www.facebook.com/juandavidc2" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/JUANDA9416" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/juandavidcg/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+
+        
+
+    </section>
+
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+        
+        <div class="contenido-seccion">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola, soy Juan</span> Ingeniero electrónico egresado con la capacidad de investigar
+               analizar e interactuar en el entorno laboral en el que se desempeña.
+               Poseo conocimientos básicos en el mundo de las Tecnologías de la 
+               Información (TI), especialmente en el área de la programación, tanto
+               del Frontend como del Backend, en un nivel junior</p>
+
+            <div class="fila">
+
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            16-04-1994
+                        </li>
+
+                        <li>
+                            <strong>Telefono</strong>
+                            3152266755
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            juandavidcarrillogarcia@gmail.com
+                        </li>
+
+                     
+
+                        <li>
+                            <strong>Direccion</strong>
+                            Avenida 12 1as-14 Los patios Norte de Santander
+                        </li>
+
+                        
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+
+                        <div class="interes">
+                            <!--Icono de Juegos-->
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+
+                        <!--Icono de Musicca-->
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+
+                        <!--Incono de VIAJAR-->
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+
+                         <!--Incono de apple-->
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+
+                         <!--Incono de deporte-->
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+
+                        <!--Incono de  libros-->
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+
+                        <!--Incono de  Carros-->
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+
+                        <!--Incono de  -->
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="botonCV">
+                Descargar CV  <i class="fa-solid fa-download"></i>
+                <a href="https://www.facebook.com/juandavidc2" target="_blank"></a>
+                <span class="overlay"></span>
+            </button>
+        </div>
+
+    </section>
+    
+    
+    <!-- SECCION SKILLS-->
+    <section class="skills" id="skills">
+
+        <div class="contenido-seccion">
+
+            <h2>Skills</h2>
+
+            <div class="fila">
+
+                <!--Technical Skill-->
+                <div class="col">
+                    
+                    <h3>Tehnical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+
+                        <div class="barra-skill">
+                            <!--Aqui va la barra de progreso Estatica-->
+                            <div class="progreso">
+                                <!--Aqui va otra barra de progreso dinamica-->
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>HTLM & CSS</span>
+                        <div class="barra-skill">
+                            <!--Aqui va la barra de progreso Estatica-->
+                            <div class="progreso">
+                                <!--Aqui va otra barra de progreso dinamica-->
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <!--Aqui va la barra de progreso Estatica-->
+                            <div class="progreso">
+                                <!--Aqui va otra barra de progreso dinamica-->
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Git</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <!--Aqui va otra barra de progreso dinamica-->
+                                <span>20%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="barra-skill">
+                            <!--Aqui va la barra de progreso Estatica-->
+                            <div class="progreso">
+                                <!--Aqui va otra barra de progreso dinamica-->
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--Professional Skills-->
+
+                <div class="col">
+                    <h3>Professional Skills</h3>
+
+                    <div class="skill">
+                        <span>Comunicacion</span>
+                        <div class="barra-skill">
+                            <!--Aqui va la barra de progreso Estatica-->
+                            <div class="progreso">
+                                <!--Aqui va otra barra de progreso dinamica-->
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <!--Aqui va la barra de progreso Estatica-->
+                            <div class="progreso">
+                                <!--Aqui va otra barra de progreso dinamica-->
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <!--Aqui va la barra de progreso Estatica-->
+                            <div class="progreso">
+                                <!--Aqui va otra barra de progreso dinamica-->
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Dedicacion</span>
+                        <div class="barra-skill">
+                            <!--Aqui va la barra de progreso Estatica-->
+                            <div class="progreso">
+                                <!--Aqui va otra barra de progreso dinamica-->
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--SECCION CURRICULUM-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <!--Subtitulo del curriculo-->
+            <h2>curriculum</h2>
+            <!--Contenedor que tiene informacion Eduacion y Experiencia laboral -->
+            <div class="fila">
+
+                <!--Contenedor que tiene informacion  Educacion-->
+                <div class="col izquierda">
+                    <h3>Educacion</h3>
+                    <!--Contenedor que tiene los items parte izquierda-->
+
+                    <div class="item izq">
+                        <h4>Ingeniero Electronico</h4>
+                        <span class="casa">Universidad Francisco de Paul Santander</span>
+                        <span class="fecha">2010 - 2020</span>
+                        <p> Ingeniero electronico egresado con la capacidad de investigar,
+                            analizar e interactuar en el entorno laboral en el que se desempeña.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="item izq">
+                        <h4>Analisis y Desarrollo de sistema de informacion -Tecnologia</h4>
+                        <span class="casa">Sena</span>
+                        <span class="fecha">2020 - presente</span>
+                        <p> Tecnologo en formacion con conocimientos basicos en el mundo 
+                            de la tecnologias.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                    <!--
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad de Oxford</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Eaque nobis pariatur, beatae dolor vero commodi blanditiis 
+                            totam, rerum omnis esse officia enim incidunt dolorem corporis 
+                            laborum veritatis unde, possimus sint?
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    -->
+                </div>
+
+                <!--Contenedor que tiene informacion  Experiencia laboral-->
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+
+                    <!--Contenedor que tiene los items parte derecha-->
+                    <div class="item der">
+                        <h4>Automatizador Junior QA</h4>
+                        <span class="casa">Grupo HDI Servicio de consultoria TI, Municipio de Bello/Antioquia</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p> Utilice herramienta de software para satisfacer eficientemente las
+                            necesidades del cliente, con un enfoque de calidad. Me dedique a la
+                            automatizacion de pruebas de software en el banco con la red de cajeros 
+                            automaticos mas grande de Colombia,Bancolombia.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                    <div class="item der">
+                        <h4>Administrador</h4>
+                        <span class="casa">Taller Automotriz</span>
+                        <span class="fecha">2015 - 2020</span>
+                        <p>  
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                    <!--
+
+                    
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañia</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Eaque nobis pariatur, beatae dolor vero commodi blanditiis 
+                            totam, rerum omnis esse officia enim incidunt dolorem corporis 
+                            laborum veritatis unde, possimus sint?
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                    -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    
+
+    <!--SECCION CURSOS-->
+    <section id ="curso" class="curso">
+        <div class="contenido-seccion">
+            <!--Subtitulo del contenido-->
+            <h2>CURSOS</h2>
+            <!--Contenedor que tiene elementos Hijos-->
+            <div class="galeria">
+
+                <div class="proyecto">
+                    <img src="./assets/src/img/imagen2_python.jpg" alt="">
+                    <div class="overlay">
+                      <h3>Programming language</h3>
+                      <p>python</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="./assets/src/img/imagen_php.jpg" alt="">
+                    <div class="overlay">
+                      <h3>Programming language</h3>
+                      <p>php</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="./assets/src/img/image4_git.jpg" alt="">
+                    <div class="overlay">
+                      <h3>Version Control System</h3>
+                      <p>Git</p>
+                    </div>
+                </div>
+                  
+                
+                <div class="proyecto">
+                    <img src="./assets/src/img/imagen_github.jpg" alt="">
+                    <div class="overlay">
+                      <h3>Collaborative Software Development Platform</h3>
+                      <p>GitHub</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    
+   <!--SECCION CONTACTO-->
+    <section id="contacto" class="contacto">
+
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+
+                <!--Formulario-->
+                <div class="col">
+                    <form id="form">
+                        <input type="text" placeholder="Tu Nombre" name="name" required>
+
+                        <input type="text" placeholder="Numero telefonico" name="phone" required>
+    
+                        <input type="text" placeholder="Direccion de correo" name="email" required>
+    
+                        <input type="text" placeholder="Tema" name="theme" required>
+    
+                        <!--Cuadro Texto-->
+                        <textarea  id="" cols="30" rows="10" placeholder="Mensaje" name="message" required></textarea>
+                        <button  type="submit" id="button_form" value="Enviar Mensaje">
+                            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
+
+                    
+                </div>
+
+                <!--Mapa-->
+                <div class="col">
+                    <img src="./assets/src/img/ubicacion4.PNG" alt="">
+
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <!--Icono de Ubicacion-->
+                                <i class="fa-solid fa-location-dot"></i>
+                                los patios, Br pensilvania Avenida 12 
+                            </li>
+                            <li>
+                                <!--Icono de Telefono -->
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                llamanos: 3152266755
+                            </li>
+
+                            <li>
+                                <!--Icono de Correo-->
+                                <i class="fa-solid fa-envelope"></i>
+                                Emial: juandavidcarrillogarcia@gmail.com
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--Hoy empiezo aca 17 de Mayo 2024-->
+
+    <!--FOOTER-->
+
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+
+        <div class="texto">
+            <P>living,learning, & leveling up one day at time</P>
+
+
+        </div>
+
+        
+        <!--Iconos de las redes sociales-->
+        <div class="redes">
+            <a href="https://www.facebook.com/juandavidc2" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://x.com/JUANDA9416" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/juandavidcg/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <!--Etiqueta para ejecutar los archivos de JavaScripts-->
+    <script src="./assets/src/Scripts/script.js"></script>
+
+    <!--Codigo en JavaScript Para el correo-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">emailjs.init('Mmaqr5oWgGL0UxMi5')</script>
+</body>
+</html>

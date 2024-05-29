@@ -1,0 +1,1914 @@
+/*Importamos Las fuentes para la letra*/
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+
+/*Declarar Variables */
+:root {
+    /* rgb(15, 23, 42)*/
+    --color-fondo: #0f172a;
+    --color-fondo2: #1c2a41;
+}
+
+
+/*
+ 1902px  ancho
+ 4762.84px altura
+
+ segunda pantalla
+ ancho: 1263.33px
+ altura: 4406.86px
+
+ aplicar este ancho y altura
+ ancho:1684.44px
+ altura: 4603.75px
+*/
+
+* {
+
+    box-sizing: border-box;
+    /*Permite que lo que se defina de aplique automaticamente a los mas elementos*/
+    font-family: 'Work Sans';
+    /*aplico el tipo de fuente*/
+
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    /*permite deslizar cuando hago clic en los link del menu*/
+    /*genera un desplazamineto mas suave y no brusco*/
+    scroll-behavior: smooth;
+
+}
+
+/*---------------------------MENU-ENCABEZADO------------------------------*/
+.contenedor-hearder {
+
+    /*background: #1e2326;*/
+    background: var(--color-fondo);
+
+    /*El contenendor se queda fijo*/
+    position: fixed;
+
+    /*width: 100%;*/
+
+    /*width: 37%;*/
+    width: 10%;
+    height: 100vh;
+
+    top: 0;
+    left: 0;
+    /*Posicion el elemento si se ve primero*/
+    z-index: 99;
+
+    /*Borde de la parte derecha*/
+    /*border-right: 5px solid #073129;*/
+    border-right: 5px solid #1CB698;
+}
+
+.contenedor-hearder header {
+    /*ancho maximo que puede tener el elemento*/
+    max-width: 1100px;
+
+    height: 100%;
+
+    /* margin: auto;*/
+
+    margin: 0px 0px 0px 0px;
+
+    /*ubica los elementos hijos en forma horizontal*/
+    display: flex;
+    /*El espacio restante se distribuye entre los elementos*/
+
+    /*justify-content: space-between;*/
+
+
+
+
+
+
+
+    flex-direction: column;
+
+
+
+
+    /*centra los elementos en el eje secundario*/
+    align-items: center;
+
+    justify-content: start;
+
+    /*Genera espacio interno dentro del contenedor*/
+    padding: 15px 20px;
+
+
+
+}
+
+.contenedor-hearder header .logo {
+    margin: 0px 0px 0px 0px;
+    height: 0px;
+
+
+}
+
+.contenedor-hearder header .logo a {
+    /*aplica estilo de fuente al palabra*/
+    font-family: 'Righteous';
+    /*Se le da Tamaño al palabra*/
+    font-size: 200px;
+
+    /*color al palabra*/
+    color: #1CB698;
+    /*quita la linea que se genera cuando se coloca un Etiqueta <a></a>*/
+    text-decoration: none;
+
+    text-shadow: -15px 1px 4px #fff;
+
+}
+
+.contenedor-hearder li {
+    /*border-top: 1px solid #fff;*/
+    /*border-bottom: 1px solid #fff;*/
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+
+.contenedor-hearder header h2 {
+    /*Espacio externo superior*/
+    margin-top: 200px;
+
+    /*Se le da Tamaño al palabra*/
+    font-size: 25px;
+
+    /*Se coloca un estilo de fuente Nombre*/
+    font-family: 'Righteous';
+
+    color: #fff;
+}
+
+.contenedor-hearder header h3 {
+    /*Se le da Tamaño al palabra*/
+    font-size: 15px;
+
+    /*define el groso de la letra o texto*/
+    font-weight: normal;
+    color: #fff;
+
+    margin-bottom: 100px;
+
+
+}
+
+
+.contenedor-hearder header ul {
+    /*ubica los elementos hijos en forma vertical*/
+    display: flex;
+
+
+    flex-direction: column;
+
+    /*quita los estilo de viñetas o numeracion de una lista*/
+    list-style: none;
+}
+
+.contenedor-hearder header .nav {
+    /*margin-top: 40px;*/
+}
+
+.contenedor-hearder header .redes {
+    margin-top: 150px;
+}
+
+.contenedor-hearder header .redes a {
+    /*color a los  iconos */
+    color: #fff;
+
+    /*display: inline-block;*/
+
+    /*quita la linea que se genera cuando se coloca un Etiqueta <a></a>*/
+    text-decoration: none;
+
+    /*define el borde de los iconos*/
+    /*border: 1px solid #fff;*/
+
+    /*cambia la forma de las puntas o esquinas de los bordes de los iconos*/
+    border-radius: 100%;
+
+    /*le damos ancho al circulo de los iconos*/
+    width: 42px;
+
+    /*le damos altura al circulo de los iconos*/
+    height: 42px;
+
+    /*Se aplica un altura */
+    line-height: 42px;
+
+    /*Espacio externo de los iconos*/
+    margin: 40px 5px;
+
+    /*le da tamaño a los inconos*/
+    font-size: 20px;
+
+    /*Crea un efecto de transicion suve*/
+    /*como desplazar las palabara hacia los lados*/
+    transition: .3s;
+
+}
+
+.contenedor-hearder header nav ul li a {
+    /*elemento*/
+    text-align: none;
+    /*Color a las palabras*/
+    color: #fff;
+
+    /*Espacio externo de cada una de las palabras*/
+    margin: 0px 15px;
+    /*Espacio interno de cada una de las palabras*/
+    padding: 3px;
+
+    /*Crea un efecto de transicion suve*/
+    /*como desplazar las palabara hacia los lados*/
+    transition: .5s;
+
+    /*quita la linea que se genera cuando se coloca un Etiqueta <a></a>*/
+    text-decoration: none;
+
+}
+
+
+/*APLICAMOS UN EFECTO HOVER*/
+/*permite que cambie de color una palabra  cuando se coloca el puntero del mouse encima*/
+.contenedor-hearder header nav ul li a:hover {
+    /*color de fondo para las palabras y el cambio*/
+    color: #1CB698;
+}
+
+
+
+/*-------------------------------------MENU RESPONSIVE--------------------------------------*/
+
+.menuresponsive {
+    /*background: var(--color-fondo);*/
+    position: fixed;
+    /*Posicion el elemento si se ve primero*/
+    z-index: 99;
+    /*width: 1300px;*/
+
+    width: 85vw;
+    height: 9vh;
+
+    right: 10px;
+    padding: 20px 0px 0px 0px;
+
+
+}
+
+
+.menuresponsive .header-cabecera {
+    width: 85vw;
+    height: 9vh;
+    display: flex;
+    justify-content: end;
+}
+
+/*ESTRUCTURA RESPONSIVE - MENU*/
+.menuresponsive .header-cabecera .nav-menuicono {
+    /*Color de fondo al contenedor div*/
+    background-color: #1CB698;
+    /*Color a sus elementos internos en este caso la lineas horizontales del icono barra menu*/
+    color: #fff;
+
+    width: 40px;
+    height: 40px;
+
+    margin: 0px 0px 5px 0px;
+
+    /*Espacio interno del contenedor*/
+    padding: 5px 10px;
+
+    /*cambia la forma de las puntas de los bordes del contenedor*/
+    border-radius: 5px;
+
+    /*cambia la figura del puntero del mouse*/
+    /*Este caso un mano señalando*/
+    cursor: pointer;
+
+    /*Se quita el elemento del sitio web*/
+    display: none;
+
+}
+
+
+.menuresponsive .header-cabecera .nav-menuicono i {
+    /*border-top: 1px solid #fff;*/
+    /*border-bottom: 1px solid #fff;*/
+    padding: 5px 0px 10px 3px;
+    text-align: center;
+}
+
+
+
+/*Se muestra los items del Menu  cuando se agrega  el artributo 
+    class="responsive" en la etiqueta <nav ></nav> de la Estructura del Menu*/
+/*Estilo y posicion al los items del menu inicio*/
+
+/*Estilo de los items del Menu*/
+.menuresponsive .header-cabecera nav {
+    display: none;
+    position: absolute;
+}
+
+
+/*El elementos ul se vuelve en posicion blocke es decir vertical*/
+.estiloresponsive .ul-items {
+    display: block;
+}
+
+.estiloresponsive .ul-items li {
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+}
+
+.estiloresponsive .ul-items {
+    /*ubica los elementos hijos en forma vertical*/
+    display: flex;
+
+
+    flex-direction: column;
+
+    /*quita los estilo de viñetas o numeracion de una lista*/
+    list-style: none;
+
+}
+
+.estiloresponsive .ul-items li a {
+    /*elemento*/
+    text-align: none;
+    /*Color a las palabras*/
+    color: #fff;
+
+    /*Espacio externo de cada una de las palabras*/
+    margin: 0px 15px;
+    /*Espacio interno de cada una de las palabras*/
+    padding: 3px;
+
+    /*Crea un efecto de transicion suve*/
+    /*como desplazar las palabara hacia los lados*/
+    transition: .5s;
+
+    /*quita la linea que se genera cuando se coloca un Etiqueta <a></a>*/
+    text-decoration: none;
+
+}
+
+/*------------ FIN MENU RESPONSIVE-----------------------------------------------------------------*/
+
+
+
+/*-----------------------SECCION INICIO---------------------------------------------------------------*/
+.inicio {
+    /*degrada el color en una parte claro y otra parte oscuro con una imagen de fondo*/
+    /* rgb(15, 23, 42)*/
+
+    /*background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)), url(./img/fondo_2.jpg);*/
+
+    background: linear-gradient(to top, rgba(15, 23, 42, .8), rgba(15, 23, 42, 1)), url(/assets/src/img/fondo_2.jpg);
+
+    /*define el tamaño de fondo de la imagen*/
+    /*la imagen se acomoda al tamaño del contenedor*/
+    background-size: cover;
+
+    /*El contenedor ocupa el 100% de altura del body*/
+    height: 100vh;
+
+
+    margin-left: 10%;
+
+
+    /*color a la letras*/
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+}
+
+.inicio .contenido-banner {
+    /*Espacio interno de cada uno de los elementos*/
+    padding: 20px;
+
+    /*color de fondo al contenedor*/
+    /*background-color: #1e2326;*/
+    background-color: var(--color-fondo);
+
+    /*define el ancho maximo*/
+    max-width: 350px;
+
+    /*Centra automatica el contenedor donde lo este ubicado de contenedor Padre*/
+    margin: 0px 0px 0px 100px;
+
+    /*Centra los elemento del contenedor*/
+    text-align: center;
+
+
+    /*cambia la forma de las puntas o esquinas de los bordes del contenedor*/
+    border-radius: 40px;
+    /*resalta los bordes*/
+    border: 2px solid #073129;
+
+
+}
+
+.inicio .contenido-banner img {
+
+    /*Espacio externo superior*/
+    margin-top: 40px;
+    /*tamaño figura y color al borde*/
+    border: 2px solid #1CB698;
+
+    display: block;
+
+    /*ancho de la imagen*/
+    width: 80%;
+    /*Espacio externos como izquierdo y derecho se acomodan automaticamente*/
+    margin: auto;
+
+    /*cambia la forma de las puntas o esquinas de los bordes de la imagen*/
+    border-radius: 100%;
+}
+
+.inicio .contenido-banner h1 {
+    /*Espacio externo superior*/
+    margin-top: 40px;
+
+    /*Se le da Tamaño al palabra*/
+    font-size: 42px;
+
+    /*Se coloca un estilo de fuente Nombre*/
+    font-family: 'Righteous';
+}
+
+.inicio .contenido-banner h2 {
+    /*Se le da Tamaño al palabra*/
+    font-size: 15px;
+
+    /*define el groso de la letra o texto*/
+    font-weight: normal;
+}
+
+.inicio .contenido-banner .redes a {
+    /*color a los  iconos */
+    color: #fff;
+
+    display: inline-block;
+
+    /*quita la linea que se genera cuando se coloca un Etiqueta <a></a>*/
+    text-decoration: none;
+
+    /*define el borde de los iconos*/
+    border: 1px solid #fff;
+
+    /*cambia la forma de las puntas o esquinas de los bordes de los iconos*/
+    border-radius: 100%;
+
+    /*le damos ancho al circulo de los iconos*/
+    width: 42px;
+
+    /*le damos altura al circulo de los iconos*/
+    height: 42px;
+
+    /*Se aplica un altura */
+    line-height: 42px;
+
+    /*Espacio externo de los iconos*/
+    margin: 40px 5px;
+
+    /*le da tamaño a los inconos*/
+    font-size: 20px;
+
+    /*Crea un efecto de transicion suve*/
+    /*como desplazar las palabara hacia los lados*/
+    transition: .3s;
+
+}
+
+/*APLICAMOS UN EFECTO HOVER*/
+/*permite que cambie de color una palabra  cuando se coloca el puntero del mouse encima*/
+.inicio .contenido-banner .redes a:hover {
+    background-color: #1CB698;
+}
+
+
+.inicio p {
+    /*display: block;*/
+
+    /*Espacio externo superior*/
+    margin-top: 40px;
+
+    /*Se le da Tamaño al palabra*/
+    font-size: 130px;
+
+    /*Se coloca un estilo de fuente Nombre*/
+    font-family: 'Righteous';
+
+    margin-left: 70px;
+}
+
+
+
+.inicio .letraj {
+    position: absolute;
+    color: #1CB698;
+    top: 39.5%;
+    left: 21%;
+}
+
+.inicio .contenedor {
+    /*los contenedores hijos los ubicamos en linea horizontal */
+    display: flex;
+}
+
+
+
+/*--------------------------------SECCION SOBRE MI--------------------------------------------------*/
+.sobremi {
+    /*Color de fondo al seccion sobre mi*/
+    /*background-color: #1e2326;*/
+    background-color: var(--color-fondo);
+    /*color al texto y elementos*/
+    color: #fff;
+
+    /*Espacio interno entre los elementos*/
+    padding: 50px 20px;
+
+    margin-left: 10%;
+}
+
+.sobremi .contenido-seccion {
+
+    max-width: 1100px;
+
+    /*Espacio externos como izquierdo y derecho se acomodan automaticamente*/
+    margin: auto;
+}
+
+.sobremi h2 {
+
+    /*Se le da Tamaño al palabra*/
+    font-size: 48px;
+    /*Se aplica estilo de fuente*/
+    font-family: 'Righteous';
+
+    /*Centro el subtitulo*/
+    text-align: center;
+
+    /*Espacion interno superiro e inferior*/
+    padding: 20px 0;
+}
+
+.sobremi .contenido-seccion p {
+    font: 18px;
+
+    /*Se aplica un espacion entre cada linea de cada texto de un parrafo */
+    line-height: 22px;
+
+    /*Espacion inferior externo */
+    margin-bottom: 20px;
+}
+
+
+.sobremi .contenido-seccion p span {
+
+    /*color a la letra*/
+    color: #1CB698;
+
+    /*se le da negrilla al texto*/
+    font-weight: bold;
+
+}
+
+.sobremi .fila {
+    /*los contenedores hijos los ubicamos en linea horizontal */
+    display: flex;
+}
+
+.sobremi .fila .col {
+    /*Un ancho a los dos contenedores hijos*/
+    width: 50%;
+}
+
+/*Estilos a subtitulos datos personales y intereses*/
+.sobremi .fila .col h3 {
+    /*Tamaño del Texto*/
+    font-size: 28px;
+
+    /*Aplicamos un estilo de fuente*/
+    font-family: 'Righteous';
+
+    /*Espacion inferior externo */
+    margin-bottom: 25px;
+}
+
+/*quita los estilo de viñetas o numeracion de una lista
+  ejemplo  * cumpleaños   -->  cumpleaños
+*/
+.sobremi .fila .col ul {
+    list-style: none;
+}
+
+/*Espacio externo en las etiqueta li que tienen 
+ cumpleaños telefono Email .... asi sucesivamente
+*/
+.sobremi .fila .col ul li {
+    margin: 12px 0;
+}
+
+/*Estilo a los items 
+  cumpleaños telefono Email .... asi sucesivamente
+*/
+.sobremi .fila .col ul li strong {
+
+    display: inline-block;
+    /*color a la palabra*/
+    color: #1CB698;
+    /*Ancho a la palabra*/
+    width: 130px;
+}
+
+
+/*Estilo a la palabra FREELANCE*/
+.sobremi .fila .col ul li span {
+
+    /*Color de fondo al textp*/
+    background-color: #1CB698;
+    /*Espacio interno */
+    padding: 3px;
+
+    /*se le da negrilla al texto*/
+    font-weight: bold;
+
+    /*cambia la forma de las puntas o esquinas de los bordes del texto*/
+    border-radius: 5px;
+}
+
+
+
+/*Posicion a los elementos hijos del contenedor Div  contenedor-intereses*/
+.sobremi .fila .col .contenedor-intereses {
+
+    /*ubica los elementos en linea*/
+    display: flex;
+
+    /*Elementos se distribuyen en varias lineas cuando se a la ocacion*/
+    flex-wrap: wrap;
+
+}
+
+/*Estilos a elementos del contenedor Div intereses   */
+.sobremi .fila .col .contenedor-intereses .interes {
+    /*ancho contenedor*/
+    width: 100px;
+    /*altura contenedor*/
+    height: 100px;
+    /*color de fondo al contenedor*/
+    /*background-color: #252A2E*/
+    background-color: var(--color-fondo2);
+    /*cambia la forma de las puntas o esquinas de los bordes del contenedor*/
+    border-radius: 10PX;
+    /*Espacio externo entre contenedores*/
+    margin: 0 15px 15px 0;
+    /*Ubica los elementos del contenedor fila*/
+    display: flex;
+    /*cambia la posicion de elementos del contenedor en filas*/
+    flex-direction: column;
+    /*centra en el eje secundario*/
+    align-items: center;
+    /*centra en el eje principal*/
+    justify-content: center;
+    /*Crea un efecto de transicion suve*/
+    /*como desplazar las palabara hacia los lados*/
+    transition: .3s;
+}
+
+
+/*APLICAMOS UN EFECTO HOVER*/
+/*permite que cambie de color una palabra  cuando se coloca el puntero del mouse encima*/
+.sobremi .fila .col .contenedor-intereses .interes:hover {
+    background-color: #1CB698;
+}
+
+
+
+/*Estilo a los  iconos del contenedor div interes*/
+.sobremi .fila .col .contenedor-intereses .interes i {
+    /*tamaño al icono*/
+    font-size: 30px;
+    /*Espacio externo*/
+    margin-bottom: 10px;
+}
+
+
+/*Elemento button que tiene la palabra  Descargar*/
+
+.sobremi button {
+    /*cambia la figura del puntero del mouse*/
+    /*Este caso un mano señalando*/
+    cursor: pointer;
+    /*color transparente*/
+    background-color: transparent;
+    /*definimos el borde del boton*/
+    border: 2px solid #fff;
+    /*ajustar automaticamnete el ancho de un elemento*/
+    width: fit-content;
+
+    display: block;
+    /*Espacio externo del boton*/
+    margin: 20px auto;
+    /*Espacio interno*/
+    padding: 10px 22px;
+
+    /*aplica tamaño a la letra*/
+    font-size: 16px;
+
+    /*color al texto dentro boton*/
+    color: #fff;
+
+    /**/
+    position: relative;
+    z-index: 1;
+}
+
+
+/*Efecto de superposicion*/
+
+.sobremi button .overlay {
+    /*la etiqueta la defino como una posicion absoluta
+      para que se muestre en segundo plano
+    */
+    position: absolute;
+    /*Definimos inicial mente su parametros */
+    /*Espacio superior*/
+    top: 0;
+    /*Espacio izquierdo*/
+    left: 0;
+    /*definimos un ancho inicial de 0  para que no se active el color
+      o no se  extienda dentro el cuadro del boton
+    */
+    width: 0;
+    /*Definimos un altura inicial*/
+    height: 100%;
+    /*color de fondo cuando cuando se active el ancho*/
+    background-color: #1CB698;
+    /*los efecto de la etiqueta  se muestra detras del contenido del boton*/
+    z-index: -1;
+    /*Tiempo en que se va aplicar los estilos a la etiqueta <span>
+      en este caso el ancho y el color 
+    */
+    transition: 1s;
+}
+
+/*se aplica efecto hover tanto al boton y se envia 
+  una anchura a la etiqueta <span> para que se actibe su color
+*/
+
+.sobremi button:hover .overlay {
+    width: 100%;
+}
+
+/*---------------------------FIN SOBRE MI-------------------------------------------------------------------*/
+
+
+
+
+
+/*-----------------------------------------SECCION SKILLS-----------------------------------------------*/
+
+/*Se aplica estilo al contenedor general que contiene elementos del tema Skills */
+
+.skills {
+    /*Color de fondo al seccion sobre mi*/
+    /*background-color: #252a2e;*/
+    background-color: var(--color-fondo2);
+    /*color al texto y elementos*/
+    color: #fff;
+
+    margin-left: 10%;
+
+    /*Espacio interno entre los elementos*/
+    padding: 50px 20px;
+}
+
+.skills .contenido-seccion {
+
+    max-width: 1100px;
+
+    /*Espacio externos como izquierdo y derecho se acomodan automaticamente*/
+    margin: auto;
+}
+
+.skills h2 {
+
+    /*Se le da Tamaño al palabra*/
+    font-size: 48px;
+    /*Se aplica estilo de fuente*/
+    font-family: 'Righteous';
+
+    /*Centro el subtitulo*/
+    text-align: center;
+
+    /*Espacion interno superiro e inferior*/
+    padding: 20px 0;
+}
+
+.skills .fila {
+    /*El boque padre y el hijo se colocan en modo  fila*/
+    display: flex;
+}
+
+
+
+/*Contenedor Class=col*/
+.skills .fila .col {
+    /*se aplico un ancho al contenedor Padre class=col*/
+    width: 50%;
+    /*Se aplico un espacio interno al contenedor Padre class=col
+    en la parte izquierda y derecha*/
+    padding: 0 20px;
+}
+
+
+/*Aplica Estilos  a los subtitulos   Tehnical Skills  y  Professional Skills */
+.skills .fila .col h3 {
+
+    /*Tamaño del Texto*/
+    font-size: 28px;
+
+    /*Aplicamos un estilo de fuente*/
+    font-family: 'Righteous';
+
+    /*Espacion inferior externo */
+    margin-bottom: 25px;
+
+}
+
+/*Aplica estilos a las Habilidades que estan en la etiqueta <span>*/
+.skills .skill>span {
+    /*Se resalto el texto*/
+    font-weight: bold;
+    /*Su ubicacion como caja se coloco como bloke es decir posicion horizontal*/
+    display: block;
+    /*Se aplico un espacion Externo inferior*/
+    margin-bottom: 10px;
+}
+
+/*Se aplico estilos a la barra de Progreso*/
+.skills .skill .barra-skill {
+    /*Altura de a la barra de progreso*/
+    height: 8px;
+    /*Se redujo su ancho*/
+    width: 80%;
+    /*Color de fondo a la barra*/
+    background-color: #131517;
+    /*Elemento queda posicionado por detras de los demas  elemetos */
+    position: relative;
+    /*Aplica un espacion Externo entre lo demas elemento hermannos*/
+    margin-bottom: 30px;
+
+}
+
+/* barra de progreso dinamica color verde*/
+.skills .skill .progreso {
+    /*Le dio color de fondo al contenedor*/
+    background-color: #1CB698;
+    /*Elemento se posicion en este caso en la equina superiro izquierda de su padre */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*Se le  da la  Altura igual al de su padre contenedor barra-skill*/
+    height: 8px;
+
+}
+
+/*Estilos para el valor que tiene la etiqueta <span> del porcentanje de las habilidades, ejemplo 75% */
+.skills .skill .barra-skill span {
+    /*Elemento se posicion en este caso en la equina superior izquierda de su padre*/
+    position: absolute;
+    /*Se le da una altura al elemento*/
+    height: 40px;
+    /*Se le da un ancho*/
+    width: 40px;
+    /*Se le da un color de fondo*/
+    background-color: #1CB698;
+    /*Las esquina de los bordes pasan a ser redondas*/
+    border-radius: 50px;
+    /*Se aplica un espacio entre lineas , al valor  que tiene adentro la etiqueta <span>*/
+    line-height: 40px;
+    /*Se centra el valor que esta en la etiqueta <span>*/
+    text-align: center;
+    /*se desplaza el circulo (generado por estilo css) de abajo hacia arriba*/
+    top: -17px;
+    /*se desplaza el circulo (generado por estilo css) de izquierda a derecha*/
+    right: -15px;
+    /*Se le da tamaño al valor que esta dentro de la etiqueta <span>*/
+    font-size: 14px;
+}
+
+
+
+/*Estas clases se agregan dinamicamnete mediante Javascripts*/
+
+/*Estilo de animacion para la barra de progreso dinamico
+  y El circulo que contiene el valor de porcentaje*/
+.skills .skill .javascript {
+
+    width: 0%;
+    /*Estilo de Movimiento a un elemento
+      1. animation --> estilo de movimiento
+      2. 2s --> el tiempo que tarda en moverse elemento
+      3. javascript --> Elemento((div span etc)  en HTML se le va aplicar el estilo 
+      4. forwards --> permite que el movimiento se mantenga en su estado final y no retroceda a su estado inicial  
+      
+      @keyframes nombreDeLaAnimacion {
+         Definición de los estados de estilo en diferentes puntos de la animación 
+       }
+    */
+    animation: 2s javascript forwards;
+}
+
+
+/*Reglas  de animacion @keyframes que permite controlar  los cambios de estilos de un elemento
+ 
+  En este caso el elemento va hacer un movimiento de izquierda a derecha
+  esto se da debido a que cuando elemento padre se le difine su ancho el elemento
+  hijo se puede desplazar y esto es gracias a la propiedad animatio:; y @keyframes
+*/
+@keyframes javascript {
+
+    /*Posicion Inicial*/
+    from {
+        /*Elemento actual inicia con ancho 0%*/
+        width: 0%;
+    }
+
+    /*Posicion final*/
+    to {
+        /*Elemento actual finaliza con un ancho 100%*/
+        width: 30%;
+    }
+}
+
+
+.skills .skill .htmlcss {
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+
+@keyframes htmlcss {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 40%;
+    }
+}
+
+
+/* Barra Progreso Python*/
+.skills .skill .Photoshop {
+    width: 0%;
+    animation: 2s Photoshop forwards;
+}
+
+@keyframes Photoshop {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 30%;
+    }
+}
+
+
+/*Barra progreso GIT*/
+.skills .skill .Wordpress {
+    width: 0%;
+    animation: 2s Wordpress forwards;
+}
+
+@keyframes Wordpress {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 20%;
+    }
+}
+
+
+/*Barra progreso SQL*/
+
+.skills .skill .Drupa {
+    width: 0%;
+    animation: 2s Drupa forwards;
+}
+
+@keyframes Drupa {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 30%;
+    }
+}
+
+/*Barra de Comunicacion*/
+.skills .skill .comunicacion {
+    width: 0%;
+    animation: 2s comunicacion forwards;
+}
+
+@keyframes comunicacion {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 80%;
+    }
+}
+
+/*Barra de Trabajo en Equipo*/
+.skills .skill .trabajo-en-equipo {
+    width: 0%;
+    animation: 2s trabajo-en-equipo forwards;
+}
+
+@keyframes trabajo-en-equipo {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 70%;
+    }
+}
+
+/*Barra Creatividad*/
+.skills .skill .Creatividad {
+    width: 0%;
+    animation: 2s Creatividad forwards;
+}
+
+@keyframes Creatividad {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 50%;
+    }
+}
+
+/*Barra de Dedicacion*/
+.skills .skill .Dedicacion {
+    width: 0%;
+    animation: 2s Dedicacion forwards;
+}
+
+@keyframes Dedicacion {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 70%;
+    }
+}
+
+/*--------------Estilo de animacion final de los estilos----------------------------------------*/
+
+
+
+
+/*--------------------------SECCION CURRICULUM-----------------------------------------------------------------------------*/
+
+/*Se aplica estilo al contenedor general que contiene elementos del tema Skills */
+
+.curriculum {
+    /*Color de fondo al seccion sobre mi*/
+    /*background-color: #1e2326;*/
+    background-color: var(--color-fondo);
+    /*color al texto y elementos*/
+    color: #fff;
+
+    /*Espacio interno entre los elementos*/
+    padding: 50px 20px;
+
+    margin-left: 10%;
+}
+
+.curriculum .contenido-seccion {
+
+    max-width: 1100px;
+
+    /*Espacio externos como izquierdo y derecho se acomodan automaticamente*/
+    margin: auto;
+}
+
+.curriculum h2 {
+
+    /*Se le da Tamaño al palabra*/
+    font-size: 48px;
+    /*Se aplica estilo de fuente*/
+    font-family: 'Righteous';
+
+    /*Centro el subtitulo*/
+    text-align: center;
+
+    /*Espacion interno superiro e inferior*/
+    padding: 20px 0;
+}
+
+.curriculum .fila {
+    /*El boque padre y el hijo se colocan en modo  fila*/
+    display: flex;
+    /*los elementos hijos se acomodan con el espacio restante que hay en el contenedor*/
+    justify-content: space-between;
+}
+
+
+/*Aplico un ancho y un espacio interno
+  A los contenedores 
+  <!--Contenedor que tiene informacion  Educacion-->
+  <!--Contenedor que tiene informacion  Experiencia laboral-->
+*/
+.curriculum .fila .col {
+    width: 49%;
+    padding: 0 20px;
+}
+
+
+/*Aplica Estilos  a los subtitulos   Educacion  y  Experencia de Trabajo */
+.curriculum .fila .col h3 {
+
+    /*Tamaño del Texto*/
+    font-size: 28px;
+
+    /*Aplicamos un estilo de fuente*/
+    font-family: 'Righteous';
+
+    /*Espacion inferior externo */
+    margin-bottom: 25px;
+
+}
+
+/*Estilo al borde del contenedor izquierdo parte izquierda
+*/
+.curriculum .fila .izquierda {
+    border-right: 2px solid #252A2E;
+}
+
+/*Estilo al borde del contenedor derecho  parte derecha
+*/
+.curriculum .fila .derecha {
+    border-left: 2px solid #252A2E;
+}
+
+
+/*
+ Estilo a los contenedores que tienen los items  tanto de la parte izquierda y derecha 
+
+ Aplico  Espacio interno, Espacio externo, un color de fondo y position relativa   */
+.curriculum .fila .item {
+    padding: 25px;
+    margin-bottom: 30px;
+    /*background-color: #252A2E*/
+    background-color: var(--color-fondo2);
+    position: relative;
+}
+
+
+/*Estilo a unos de los items Arte y Multimedia
+  Aplico tamaño a la letra  y Espacio externo 
+*/
+.curriculum .fila .item h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/*Estilo a la letra: Universidad de Oxford */
+.curriculum .fila .item .casa {
+    /*Color al texto*/
+    color: #1CB698;
+    /*Tamaño a la letra */
+    font-size: 22px;
+    /*Estilo de Negriña a la letra que resalte mas*/
+    font-weight: bold;
+    /*Su posicion de bloque seria en forma Vertical*/
+    display: block;
+
+}
+
+/*Estio a la letra: 2005 - 2008*/
+.curriculum .fila .item .fecha {
+    /*Su posicion de bloque seria en forma Vertical*/
+    display: block;
+    /*Color al texto*/
+    color: #1CB698;
+    /*Espacio externo inferior*/
+    margin-bottom: 10px;
+}
+
+/*Estilo al parrafo: que esta en la etiqueta <p><p>*/
+.curriculum .fila .item p {
+    /*Espacio entre lineas*/
+    line-height: 24px;
+}
+
+/*Estilo al borde derecho del contenedor izquierdo de los items*/
+.curriculum .fila .izq {
+    /*borde derecho*/
+    border-right: 2px solid #1CB698;
+    /*Espacio derecho*/
+    margin-right: 20px;
+}
+
+/*Estilo al borde derecho del contenedor derecho de los items*/
+.curriculum .fila .der {
+    /*borde izquierdo*/
+    border-left: 2px solid #1CB698;
+    /*Espacio izquierdo*/
+    margin-left: 20px;
+}
+
+/*Se le da estilo contenerdor conectori*/
+.curriculum .fila .item .conectori {
+    /*Altura*/
+    height: 2px;
+    /*Color de fondo al contenedor*/
+    background-color: #1CB698;
+    /*Se define un ancho*/
+    width: 47px;
+    /*Se le da la ubicacion al contenedor posicion absoluta*/
+    position: absolute;
+    /*Desplazar hacia a bajo*/
+    top: 50%;
+    /*Desplazar hacia a la derecha*/
+    right: -47px;
+    /*Se posiciona de los de mas elementos*/
+    z-index: 5;
+}
+
+/*Se le da estilo contenedor class= "circuloi"*/
+.curriculum .fila .item .conectori .circuloi {
+
+    display: block;
+    /*Altura*/
+    height: 10px;
+    /*Se define un ancho*/
+    width: 10px;
+    /*Se le da estilo a los borde */
+    border-radius: 50%;
+    /*Color de fondo al contenedor*/
+    background-color: #1CB698;
+    /*Se empuja el elemento a la derecha*/
+    float: right;
+    /*Se le da la ubicacion al contenedor posicion relativa*/
+    position: relative;
+    /*se  despla el elemento hacia arriba*/
+    bottom: 4px;
+}
+
+
+.curriculum .fila .item .conectord {
+    /*Altura*/
+    height: 2px;
+    /*Color de fondo al contenedor*/
+    background-color: #1CB698;
+    /*Se define un ancho*/
+    width: 47px;
+    /*Se le da la ubicacion al contenedor posicion absoluta*/
+    position: absolute;
+    /*Desplazar hacia a bajo*/
+    top: 50%;
+    /*Desplazar hacia a la derecha*/
+    left: -47px;
+    /*Se posiciona de los de mas elementos*/
+    z-index: 5;
+}
+
+/*Se le da estilo contenedor class= "circuloi"*/
+.curriculum .fila .item .conectord .circulod {
+
+    display: block;
+    /*Altura*/
+    height: 10px;
+    /*Se define un ancho*/
+    width: 10px;
+    /*Se le da estilo a los borde */
+    border-radius: 50%;
+    /*Color de fondo al contenedor*/
+    background-color: #1CB698;
+    /*Se empuja el elemento a la derecha*/
+    float: left;
+    /*Se le da la ubicacion al contenedor posicion relativa*/
+    position: relative;
+    /*se  despla el elemento hacia arriba*/
+    bottom: 4px;
+}
+
+
+
+
+/*-----------------------SECCION CURSOS----------------------------------*/
+
+/*Se aplica estilo al contenedor general que contiene elementos del tema Skills */
+
+.curso {
+    /*Color de fondo al seccion sobre mi*/
+    /*background-color: #252A2E;*/
+    background-color: var(--color-fondo2);
+    /*color al texto y elementos*/
+    color: #fff;
+
+
+
+    /*Espacio interno entre los elementos*/
+    padding: 50px 20px;
+
+    margin-left: 10%;
+}
+
+.curso .contenido-seccion {
+
+    max-width: 1100px;
+
+    /*Espacio externos como izquierdo y derecho se acomodan automaticamente*/
+    margin: auto;
+}
+
+.curso h2 {
+
+    /*Se le da Tamaño al palabra*/
+    font-size: 48px;
+    /*Se aplica estilo de fuente*/
+    font-family: 'Righteous';
+
+    /*Centro el subtitulo*/
+    text-align: center;
+
+    /*Espacion interno superiro e inferior*/
+    padding: 20px 0;
+}
+
+
+/*Class = galeria  */
+
+.curso .galeria {
+    /*Los elementos se ubican en fila*/
+    display: flex;
+    /*Permite que lo elementos se acomoden automaticamente en fila si no caben el sitio web*/
+    flex-wrap: wrap;
+    /*Agrega espacios antes del primer elemento y despues del ultimo*/
+    justify-content: space-around;
+}
+
+/*Class = proyecto*/
+.curso .galeria .proyecto {
+    /*Posicion al contenedor*/
+    position: relative;
+    /*Anchura Maxima al contenedor*/
+    max-width: 340px;
+    /*Altura que se ajuste para mostrar el contenido*/
+    height: fit-content;
+    /*Espacio externo*/
+    margin: 10px;
+    /*Cambia figura del puntero o icono del Mouse*/
+    cursor: pointer;
+}
+
+
+/*Class = img*/
+.curso .galeria .proyecto img {
+    /*Ancho de la imagen */
+    width: 100%;
+    display: block;
+}
+
+
+/*Class = overlay*/
+.curso .galeria .proyecto .overlay {
+    /*Posicion el contenedor primero que los demas hijos */
+    position: absolute;
+    top: 0;
+    /*Ancho*/
+    width: 100%;
+    /*Altura*/
+    height: 100%;
+    /*Centra el contenido*/
+    text-align: center;
+    /*Propieda que liner-gradient(color1,color2);
+      -permite ubicar cada color en fila
+      -El cuarto numero, permite que el color se vuelva claro
+    */
+    background: linear-gradient(rgba(28, 182, 152, .8), rgba(28, 182, 152, .8));
+    /*Posiciona lo elemento en fila o columna*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*----------------------------------------*/
+    /*Genera una trasicion en tiempo, para aplicar el estilo*/
+    transition: 1s;
+    /*Tamaño a la letra*/
+    font-size: 18px;
+    /*Define un espacio entre caracteres de forma horizontal*/
+    letter-spacing: 3px;
+    /*Define qué tan opaco es el elemento. o transparente*/
+    opacity: 0;
+
+}
+
+/*h3*/
+.curso .galeria .proyecto .overlay h3 {
+    /*Margen inferior*/
+    margin-bottom: 20px;
+    /*Genera una trasicion en tiempo, para aplicar el estilo*/
+    transition: 1s;
+}
+
+/*Se aplica efecto hover para activar la propieda opacity*/
+.curso .galeria .proyecto .overlay:hover {
+    opacity: 1;
+}
+
+/*Se aplica efecto hover para cambiar el valor de la propieda margin-bottom*/
+.curso .galeria .proyecto .overlay:hover h3 {
+    margin-bottom: 0px;
+}
+
+/*--------------------------FIN DE SECCION PORTAFOLIO---------------------------------*/
+
+
+
+/*---------------------------SECCION CONTACTO---------------------------------------*/
+/*Class = contacto*/
+.contacto {
+    /*permite colocar una Imagen de fondo*/
+    background-image: url(/assets/src/img/);
+    /*Color de fondo*/
+    /*background-color: #1e2326*/
+    background-color: var(--color-fondo);
+    /*color a las letras*/
+    color: #fff;
+    /*Espacio interno*/
+    padding: 50px 0;
+
+    margin-left: 10%;
+}
+
+/*Class = contenido-seccion*/
+.contacto .contenido-seccion {
+    /*Ancho Maximo*/
+    max-width: 1100px;
+    /*Espacio Externo auto,  centra el contenedor horizontalmente*/
+    margin: auto
+}
+
+/*Class : h2*/
+.contacto h2 {
+    /*Se le da Tamaño al palabra*/
+    font-size: 48px;
+    /*Se aplica estilo de fuente*/
+    font-family: 'Righteous';
+
+    /*Centro el subtitulo*/
+    text-align: center;
+
+    /*Espacion interno superiro e inferior*/
+    padding: 20px 0;
+}
+
+/*Class= fila*/
+.contacto .fila {
+    /*los contenedores hijos se posicionan en modo horizontal*/
+    display: flex;
+}
+
+/*Class = col  Contenedores de Fomulario y Mapa*/
+.contacto .col {
+    /*Ancho a los contenedores*/
+    width: 50%;
+    /*Espacio interno*/
+    padding: 10px;
+    /*Posicion a los contenedores*/
+    position: relative;
+}
+
+
+/*input y textarea*/
+.contacto .col input,
+.contacto .col textarea {
+    /*los Elementos de ubican en vertical*/
+    display: block;
+    /*Ancho de elemento*/
+    width: 100%;
+    /*Espacio interno*/
+    padding: 18px;
+    /*sin borde el elemento*/
+    border: none;
+    /*Espacion externo superior*/
+    margin-bottom: 20px;
+    /*Color de fondo*/
+    /*background-color: #252A2E*/
+    background-color: var(--color-fondo2);
+    /*aplica color a letra*/
+    color: #fff;
+    /*Tamaño a letra*/
+    font-size: 18px;
+}
+
+
+/*Button */
+.contacto button {
+    /*cambia la figura del puntero del mouse*/
+    /*Este caso un mano señalando*/
+    cursor: pointer;
+    /*color transparente*/
+    background-color: transparent;
+    /*definimos el borde del boton*/
+    border: 2px solid #fff;
+    /*ajustar automaticamnete el ancho de un elemento*/
+    width: fit-content;
+
+    display: block;
+    /*Espacio externo del boton*/
+    margin: 20px auto;
+    /*Espacio interno*/
+    padding: 10px 22px;
+
+    /*aplica tamaño a la letra*/
+    font-size: 16px;
+
+    /*color al texto dentro boton*/
+    color: #fff;
+
+    /**/
+    position: relative;
+    z-index: 10;
+}
+
+
+.contacto button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+
+.contacto button:hover .overlay {
+    width: 100%;
+}
+
+
+/*img de Mapa*/
+.contacto .col img {
+    /*el ancho de la imagen se acomoda al ancho definido de su padre*/
+    width: 100%;
+}
+
+
+/*Class = infor   informacion del contacto*/
+.contacto .col .info {
+    position: absolute;
+    top: 15%;
+    background-color: #252A2E;
+    padding: 20px;
+    width: fit-content;
+    left: 50%;
+    /*Mueve el contenedor o elemento por ejes x y eje y*/
+    transform: translate(-50%, -50%);
+}
+
+
+
+/*Class : ul*/
+.contacto .col .info ul {
+
+    /*Quita las viñetas o los puntos de los items */
+    list-style: none;
+
+}
+
+.contacto .col .info ul {
+    /*Generor un espacio externo*/
+    margin-bottom: 20px;
+}
+
+
+/* etiqueta <i> iconos  */
+.contacto .col .info ul li i {
+    /*color a los iconos*/
+    color: #1CB698;
+    display: inline-block;
+    /*Espacio externo del icono*/
+    margin-right: 20px;
+
+}
+
+/*-----------------FIN SECCION CONTACTO---------------------------------------*/
+
+
+/*-------------------SECCION FOOTER---------------------------------------------*/
+footer {
+    /*color de fondo*/
+    /*background-color: #252A2E;*/
+    background-color: var(--color-fondo2);
+    color: #fff;
+
+    /*Espacio internos*/
+    padding: 50px 0 30px 180px;
+
+    /*Centra los elementos*/
+    text-align: center;
+    position: relative;
+    /*su ancho sera el 100% de la pantalla*/
+    width: 100%;
+
+    /*margin-left: 37%;*/
+
+}
+
+
+footer .redes {
+    /*Espacio externo */
+    margin-bottom: 20px;
+}
+
+
+/*Estilo a los iconos de la redes sociales*/
+footer .redes a {
+    /*color a los  iconos */
+    color: #fff;
+
+    display: inline-block;
+
+    /*quita la linea que se genera cuando se coloca un Etiqueta <a></a>*/
+    text-decoration: none;
+
+    /*define el borde de los iconos*/
+    border: 1px solid #fff;
+
+    /*cambia la forma de las puntas o esquinas de los bordes de los iconos*/
+    border-radius: 100%;
+
+    /*le damos ancho al circulo de los iconos*/
+    width: 42px;
+
+    /*le damos altura al circulo de los iconos*/
+    height: 42px;
+
+    /*Se aplica un altura */
+    line-height: 42px;
+
+    /*Espacio externo de los iconos*/
+    margin: 40px 5px;
+
+    /*le da tamaño a los inconos*/
+    font-size: 20px;
+
+    /*Crea un efecto de transicion suve*/
+    /*como desplazar las palabara hacia los lados*/
+    transition: .3s;
+}
+
+/*Estilo a icono de la flecha */
+footer .arriba {
+    /*Contenedor que sea tipo blocke*/
+    display: block;
+    /*ancho al contenedor*/
+    width: 50px;
+    /*altura al contenedor*/
+    height: 50px;
+    /*color de fondo*/
+    background-color: #1CB698;
+    /*Color a l icono*/
+    color: #fff;
+    /*Posicion que permite mover el contenedor*/
+    position: absolute;
+    /*Despla de izquierda a derecha*/
+    left: 55%;
+    transform: translateX(-50%);
+    /*Desplazamiento de abajo hacia arriba*/
+    top: -25px;
+
+    /*Las esquina cambian a circulo*/
+    border-radius: 50%;
+
+    /*Espacio entre lineas*/
+    line-height: 50px;
+
+    /*tamaño al elemento*/
+    font-size: 18px;
+}
+
+.footer .texto p {
+    /*Se le da Tamaño al palabra*/
+    font-size: 15px;
+
+    /*define el groso de la letra o texto*/
+    font-weight: normal;
+    color: #fff;
+
+    /*margin-bottom: 100px;*/
+}
+
+/*---------------------FINAL DEL FOOTER--------------------------------------------*/
+
+
+/*--------------------SECCION RESPONSIVE--------------------------------------------*/
+
+/*--Pantallas Menor ancho:1152px--*/
+
+/*---SECCION MENU------*/
+@media screen and (max-width:1152px) {
+
+    /*Se desaparece y no se muestra en el sitio web*/
+    nav {
+        display: none;
+    }
+
+
+    /*Conetenedor nav para activar el contenedor de los items*/
+    .menuresponsive .header-cabecera .estiloresponsive {
+        display: block;
+        /*position: absolute;*/
+
+        right: 0px;
+        margin: 50px 0px 0px 0px;
+        background-color: #252A2E;
+        width: 140px;
+    }
+
+    /*Se activa el contenedor de la estructura Responsive -MENU icono Verde*/
+    /*
+    .menuresponsive header .nav-responsive {
+        //Elemento con posicion blocke
+        display: block;
+        //position: absolute;
+        bottom: 950px;
+        right: 30px;
+    }*/
+
+    .menuresponsive .header-cabecera .nav-menuicono {
+
+        display: block;
+
+
+    }
+
+}
+
+
+/*---SECCION INICIO----*/
+
+/*Cambio tamaño Texto*/
+@media screen and (max-width:1138px) {
+
+    .inicio p {
+        font-size: clamp(50px, 10vw, 120px);
+    }
+
+}
+
+
+/*--SECCION MENU ENCABEZADO--*/
+@media screen and (max-width: 989px) {
+    .contenedor-hearder header .logo a {
+        font-size: clamp(90px, 10vw, 200px);
+    }
+
+    .contenedor-hearder header h2 {
+        margin-top: 100px;
+        font-size: clamp(15px, 10vw, 25px);
+    }
+
+    .contenedor-hearder header h3 {
+        font-size: 10px;
+    }
+}
+
+
+
+
+@media screen and (max-width:700px) {
+
+    /*------SECCION INICIO----------*/
+    /*Los elementos se ubican en blocke*/
+    .inicio .contenedor {
+        display: block;
+        margin: 0px auto;
+    }
+
+    .inicio .contenedor .textoinicial {
+        width: fit-content;
+        margin: 10px 0px 100px 0px;
+    }
+
+    .inicio .contenedor .contenido-banner {
+        width: fit-content;
+        margin: auto;
+    }
+
+
+
+    /*---SECCION SOBRE MI----*/
+
+    /*Los elementos se ubican en blocke*/
+    .sobremi .fila {
+        display: block;
+
+    }
+
+
+
+    /*Los elementos se acomodan cuando el ancho va cambiando dinamicamente*/
+    .sobremi .fila .col {
+        width: fit-content;
+    }
+
+
+    /*SECCION SKILLS*/
+
+    .skills .fila {
+        display: block;
+    }
+
+    .skills .fila .col {
+        width: 100%;
+    }
+
+    .skills .fila .col .barra-skill {
+        width: 100%;
+    }
+
+
+    /*SECCION CURRICULUM*/
+    .curriculum .fila {
+        display: block;
+    }
+
+    .curriculum .fila .col {
+        width: 90%;
+    }
+
+    .curriculum .fila .derecha {
+        margin-left: 20px;
+    }
+
+
+    /*---SECCION PORTFOLIO---*/
+
+    .portfolio .galeria {
+        display: block;
+        width: 100%;
+    }
+
+    .portfolio .galeria .proyecto {
+        max-width: 100%;
+    }
+
+    .portfolio .galeria .proyecto img {
+        width: 100%;
+    }
+
+    /*--SECCION CONTACTO--*/
+    .contacto .fila {
+        display: block;
+    }
+
+    .contacto .fila .col {
+        width: 100%;
+    }
+
+
+    /*-------FOOTER-------*/
+    .footer .texto p {
+        margin: auto;
+    }
+
+
+    footer .texto .redes {
+        /*Espacio externo */
+        margin: auto;
+    }
+
+}
